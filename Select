@@ -1,0 +1,13 @@
+SELECT title, date FROM Album
+WHERE date = 2018
+
+SELECT track_id, MAX(duration) as max FROM track
+
+SELECT track FROM Track
+WHERE duration<210
+
+SELECT name collection FROM collection
+WHERE date >= 2018 AND date =< 2020
+
+SELECT track_id, track FROM track
+WHERE track LIKE '%%my%%'
